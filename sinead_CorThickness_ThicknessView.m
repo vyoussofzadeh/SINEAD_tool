@@ -14,5 +14,5 @@ function fig = sinead_CorThickness_ThicknessView()
 % ___________________________________________________________________________
 disp('Viewing cortical thickness ...')
 
-path = uigetdir(cd,'Select subject folder');
+path = spm_select(Inf,'dir','Select subject folder');
 sinead_ctview(path);

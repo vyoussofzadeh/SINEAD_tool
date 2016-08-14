@@ -14,6 +14,6 @@ function fig = sinead_featureanalysis_fe_AveInt()
 % ___________________________________________________________________________
 disp('Average intensity of (PET) scans ...')
 
-cadsum_aveintersity()
+sinead_aveintersity()
 
 disp('completed, check AI.mat in the current folder!')

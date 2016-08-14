@@ -20,7 +20,7 @@ col = [0.5,0.5,0.5];
 path = spm_select(Inf,'dir','Select folder');
 
 % in2 = input ('Display all maps (yes = 1, No = 0)? ');
-in2 = 0;
+in2 = 1;
 disp('---------------------------');
 
 disp('SurfArea = 1');
@@ -102,6 +102,7 @@ fCTV.rh    = CT_rh;
 % % set(h,'edgecolor','none');
 % h(2).FaceColor = [0,1,1];
 % h(1).FaceColor = [1,1,0];
+
 
 fh=findall(0,'type','figure');
 lfh = length(fh);
@@ -185,7 +186,7 @@ h = barwitherr(GstdTh', GmTh);    % Plot with errorbars
 box off
 set(gca,'color','none');
 title('LH, average'); % Average over all ROIs and all subjects
-set(gcf, 'Position', [800   300   1000   300]);
+set(gcf, 'Position', [800   300   800   300]);
 ylabel('mm');
 xlabel('group');
 % h.FaceColor = [0,1,1];

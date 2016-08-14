@@ -1,7 +1,7 @@
 function setorigin_center(files)
 % set origin of image files to the center of xyz dimensions using spm
-% functions
-% Fumio Yamashita 2014.1.20
+
+
 %% check arguments
 if nargin == 0
     files = spm_select(Inf,'image','Select raw image files');

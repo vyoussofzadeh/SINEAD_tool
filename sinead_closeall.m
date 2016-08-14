@@ -13,6 +13,6 @@ function sinead_closeall()
 % v1.0 Vahab Youssofzadeh 05/06/2016
 % ___________________________________________________________________________
 clc
-disp('Thanks for using our tool!')
+disp('Thanks for using our SINEAD!')
 
 close all

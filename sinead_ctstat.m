@@ -20,8 +20,8 @@ elseif in4 == 2
     datatype = '*lh.aparc.a2009s.stats';
 elseif in4 == 3
     datatype = '*lh.aparc.DKTatlas40.stats';
- elseif in4 == 4
-    datatype = '*lh.BA.stats';   
+elseif in4 == 4
+    datatype = '*lh.BA.stats';
 end
 
 files_thick_lh = sinead_findfiles (path,datatype);
@@ -50,8 +50,8 @@ elseif in4 == 2
     datatype = '*rh.aparc.a2009s.stats';
 elseif in4 == 3
     datatype = '*rh.aparc.DKTatlas40.stats';
- elseif in4 == 4
-    datatype = '*rh.BA.stats';   
+elseif in4 == 4
+    datatype = '*rh.BA.stats';
 end
 
 files_thick_rh = sinead_findfiles (path,datatype);
@@ -78,35 +78,44 @@ label = table2array(T_thick_rh_t(:,1));
 %% visualisation
 if in2 ==1
     
-    % Left Hemisphere
     figure,
-    h = barh(thickAve_lh(:,end:-1:1));
-    set(gca,'Ytick', 1:34,'YtickLabel',label)
+    % Whole brain (left + right hemispheres)
+    %     figure,
+    subplot 131
+    h = barh(thickAve_rh(:,end:-1:1) + thickAve_lh(:,end:-1:1));
+    set(gca,'Ytick', 1:length(label),'YtickLabel',1:length(label))
     box off
     set(gca,'color','none');
     set(h(1),'FaceColor',[0.5,0.67,0.65]);
-    title (['G', num2str(s),':',idx{in3+2}, ', left hemisphere']);
-    set(gcf, 'Position', [800   100   800   700]);
+    title ('Whole brain');
+    set(gcf, 'Position', [800   100   1200   1000]);
+    ylabel('ROI');
+    xlabel('mm');
     
     % Right Hemisphere
-    figure,
+    %     figure,
+    subplot 132
     h = barh(thickAve_rh(:,end:-1:1));
-    set(gca,'Ytick', 1:34,'YtickLabel',label)
+    set(gca,'Ytick', 1:length(label),'YtickLabel',1:length(label))
     box off
     set(gca,'color','none');
     set(h(1),'FaceColor',[0.5,0.67,0.65]);
-    title (['G', num2str(s),':',idx{in3+2}, ', right hemisphere']);
-    set(gcf, 'Position', [800   100   800   700]);
+    title ('RH');
+    %     set(gcf, 'Position', [800   100   800   700]);
+    ylabel('ROI');
+    xlabel('mm');
     
-    % Whole brain (left + right hemispheres)
-    figure,
-    h = barh(thickAve_rh(:,end:-1:1) + thickAve_lh(:,end:-1:1));
-    set(gca,'Ytick', 1:34,'YtickLabel',label)
+    % Left Hemisphere
+    subplot 133
+    h = barh(thickAve_lh(:,end:-1:1));
+    set(gca,'Ytick', 1:length(label),'YtickLabel',1:length(label));
     box off
     set(gca,'color','none');
     set(h(1),'FaceColor',[0.5,0.67,0.65]);
-    title (['G', num2str(s),':',idx{in3+2}, ', whole brain']);
-    set(gcf, 'Position', [800   100   800   700]);
+    title ('LH');
+    %     set(gcf, 'Position', [800   100   800   700]);
+    ylabel('ROI');
+    xlabel('mm');
     
 end
 

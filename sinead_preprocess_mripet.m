@@ -15,4 +15,5 @@ function fig = sinead_preprocess_mripet()
 disp('MRI/PET preprocessing ...')
 
 spm_jobman('initcfg');
+spm('CreateIntWin','on');
 spm_jobman
