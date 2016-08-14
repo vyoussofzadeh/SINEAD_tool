@@ -1,0 +1,64 @@
+# Table of FreeSurfer cortical parcellation anatomical statistics 
+# 
+# CreationTime 2016/05/27-08:19:34-GMT
+# generating_program mris_anatomical_stats
+# cvs_version $Id: mris_anatomical_stats.c,v 1.72 2011/03/02 00:04:26 nicks Exp $
+# mrisurf.c-cvs_version $Id: mrisurf.c,v 1.693.2.7 2013/05/12 22:28:01 nicks Exp $
+# cmdline mris_anatomical_stats -mgz -f ../stats/lh.BA.thresh.stats -b -a ./lh.BA.thresh.annot -c ./BA.thresh.ctab S5_07 lh white 
+# sysname  Linux
+# hostname xubuntu-VirtualBox
+# machine  i686
+# user     fsuser
+# 
+# SUBJECTS_DIR /usr/local/freesurfer/subjects
+# anatomy_type surface
+# subjectname S5_07
+# hemi lh
+# AnnotationFile ./lh.BA.thresh.annot
+# AnnotationFileTimeStamp 2016/05/27 04:19:05
+# Measure Cortex, NumVert, Number of Vertices, 141558, unitless
+# Measure Cortex, WhiteSurfArea, White Surface Total Area, 92414.2, mm^2
+# NTableCols 10
+# TableCol  1 ColHeader StructName
+# TableCol  1 FieldName Structure Name
+# TableCol  1 Units     NA
+# TableCol  2 ColHeader NumVert
+# TableCol  2 FieldName Number of Vertices
+# TableCol  2 Units     unitless
+# TableCol  3 ColHeader SurfArea
+# TableCol  3 FieldName Surface Area
+# TableCol  3 Units     mm^2
+# TableCol  4 ColHeader GrayVol
+# TableCol  4 FieldName Gray Matter Volume
+# TableCol  4 Units     mm^3
+# TableCol  5 ColHeader ThickAvg 
+# TableCol  5 FieldName Average Thickness
+# TableCol  5 Units     mm
+# TableCol  6 ColHeader ThickStd
+# TableCol  6 FieldName Thickness StdDev
+# TableCol  6 Units     mm 
+# TableCol  7 ColHeader MeanCurv
+# TableCol  7 FieldName Integrated Rectified Mean Curvature
+# TableCol  7 Units     mm^-1
+# TableCol  8 ColHeader GausCurv 
+# TableCol  8 FieldName Integrated Rectified Gaussian Curvature
+# TableCol  8 Units     mm^-2
+# TableCol  9 ColHeader  FoldInd
+# TableCol  9 FieldName  Folding Index 
+# TableCol  9 Units      unitless 
+# TableCol 10 ColHeader CurvInd
+# TableCol 10 FieldName Intrinsic Curvature Index
+# TableCol 10 Units     unitless
+# ColHeaders StructName NumVert SurfArea GrayVol ThickAvg ThickStd MeanCurv GausCurv FoldInd CurvInd
+BA1                                       783    379   1163  2.152 0.385     0.186     0.189       53     8.4
+BA2                                      1375    913   2351  2.254 0.451     0.122     0.077       32     2.6
+BA3a                                      896    646    808  1.652 0.348     0.158     0.061       13     2.4
+BA3b                                     1628   1122   1750  1.474 0.294     0.107     0.032        9     2.3
+BA4a                                     2108   1131   3316  2.633 0.489     0.179     0.520      558    57.7
+BA4p                                     1280    800   1913  2.550 0.530     0.151     0.122       79     9.2
+BA6                                      6399   3811  12232  2.730 0.502     0.142     0.099      211    22.9
+BA44                                     1619   1082   2836  2.360 0.353     0.144     0.051       27     3.5
+BA45                                     1254    858   2928  2.623 0.443     0.169     0.087       31     4.4
+V1                                       3542   2256   4199  1.707 0.471     0.162     0.087       67    13.5
+V2                                       4431   2758   5421  1.768 0.456     0.179     0.105      130    21.4
+MT                                        614    409    858  1.999 0.458     0.146     0.058        9     1.4

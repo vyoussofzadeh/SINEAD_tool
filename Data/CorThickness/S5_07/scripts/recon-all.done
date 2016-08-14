@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT S5_07
+START_TIME Wed May 25 04:09:09 EDT 2016
+END_TIME Fri May 27 04:31:05 EDT 2016
+RUNTIME_HOURS 48.366
+USER fsuser
+HOST xubuntu-VirtualBox
+PROCESSOR i686
+OS Linux
+UNAME Linux xubuntu-VirtualBox 3.2.0-23-generic #36-Ubuntu SMP Tue Apr 10 20:41:14 UTC 2012 i686 i686 i386 GNU/Linux
+VERSION $Id: recon-all,v 1.379.2.73 2013/05/12 23:15:37 nicks Exp $
+CMDPATH /usr/local/freesurfer/bin/recon-all
+CMDARGS -i /media/sf_AIBL_Data/5/MPRAGE_ADNI_confirmed/2007-06-22_11_25_43.0/S62407/AIBL_5_MR_MPRAGE_ADNI_confirmed__br_raw_20090128144237839_1_S62407_I134760.nii -subjid S5_07 -all

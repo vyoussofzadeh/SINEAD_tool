@@ -1,0 +1,1 @@
+mri_convert /usr/local/freesurfer/subjects/S5_07/mri/rawavg.mgz /usr/local/freesurfer/subjects/S5_07/mri/orig.mgz --conform
