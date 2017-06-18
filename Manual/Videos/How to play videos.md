@@ -1,3 +1,3 @@
 ﻿# Play videos
-Video are in mp4 format. We recommend playing by VLC player:
+Videos can be played with VLC player:
 http://www.videolan.org/vlc/index.html 
